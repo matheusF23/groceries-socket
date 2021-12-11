@@ -1,0 +1,20 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:matheusF23/groceries-socket.git",
+  "author": "Matheus Figueiredo <figueiredo.matheus06@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "client": "node client/client.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "net": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
