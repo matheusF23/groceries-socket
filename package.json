@@ -6,7 +6,7 @@
   "author": "Matheus Figueiredo <figueiredo.matheus06@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server/server.js",
+    "server": "node server/server.js",
     "dev": "nodemon server/server.js",
     "client": "node client/client.js"
   },
