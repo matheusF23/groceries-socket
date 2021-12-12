@@ -1,6 +1,6 @@
 # Groceries Socket
 
-Esta aplicação faz uso do socket.io com NodeJS para exemplificar uma comunicação cliente-servidor
+Esta aplicação é uma implementação do socket com NodeJS para exemplificar uma comunicação cliente-servidor no cenário de um supermercado.
 
 ## Clonar projeto
 
@@ -25,3 +25,9 @@ Para executar o cliente utilize:
 ```
 $ yarn client
 ```
+
+# Fluxo de execução
+
+O projeto objetiva realizar o seguinte fluxo:
+
+![image](https://user-images.githubusercontent.com/54044801/145727206-000994d0-828f-4166-8769-2a0b08eed8dc.png)
