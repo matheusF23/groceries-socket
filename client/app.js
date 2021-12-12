@@ -23,12 +23,17 @@ const app = socket => {
         const userAnswer = ProductService.addAnotherProduct()
         if (userAnswer === '1') {
           socket.write('listCategories')
-        } else {
-          socket.write('getOrder')
+          break
         }
+        socket.write('getOrder')
         break
       case 'showOrder':
         OrderService.showOrder(listParams[1])
+        const deleteProduct = OrderService.deleteProduct(listParams[1])
+        if(deleteProduct) {
+          socket.write(`deleteProduct-|-${deleteProduct}`)
+          break
+        }
         const closeOrder = OrderService.closeOrder()
         socket.write(`closeOrder-|-${closeOrder}`)
         break

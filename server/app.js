@@ -27,10 +27,17 @@ const app = (socket) => {
         const order = JSON.stringify(OrderService.getOrder())
         socket.write(`showOrder-|-${order}`)
         break;
+      case 'deleteProduct':
+        const newOrder = JSON.stringify(OrderService.deleteProduct(listParams[1]))
+        socket.write(`showOrder-|-${newOrder}`)
+        break;
       case 'closeOrder':
         const closeOrder = listParams[1]
         if (closeOrder === '2') socket.write('addAnotherProduct')
-        if (closeOrder === '1') socket.write('orderClosed')
+        if (closeOrder === '1') {
+          OrderService.clearOrder()
+          socket.write('orderClosed')
+        }
         break;
 
       default:

@@ -20,6 +20,17 @@ class OrderService {
   static getOrder() {
     return order
   }
+
+  static deleteProduct(productId) {
+    order.totalPrice -= order.products[productId].price
+    order.products.splice(productId, 1)
+    return order
+  }
+
+  static clearOrder() {
+    order.totalPrice = 0
+    order.products.splice(0, order.products.length)
+  }
 }
 
 module.exports = OrderService
