@@ -17,7 +17,7 @@ $ yarn install
 ```
 
 ## Execução do projeto
-Estando na pasta do projeto é necessário executar o servidor é o cliente. Para executar o servidor utilize:
+Estando na pasta do projeto é necessário executar o servidor e o cliente. Para executar o servidor utilize:
 ```
 $ yarn server
 ```
