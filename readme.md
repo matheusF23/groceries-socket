@@ -1,4 +1,4 @@
-**Participante**: [Gilson Santos](https://github.com/gilsonsantos03) e [Matheus Figueiredo](https://github.com/matheusF23)
+**Participantes**: [Gilson Santos](https://github.com/gilsonsantos03) e [Matheus Figueiredo](https://github.com/matheusF23)
 
 # Groceries Socket
 
