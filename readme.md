@@ -1,3 +1,5 @@
+**Participante**: [Gilson Santos](https://github.com/gilsonsantos03) e [Matheus Figueiredo](https://github.com/matheusF23)
+
 # Groceries Socket
 
 Esta aplicação é uma implementação do socket com NodeJS para exemplificar uma comunicação cliente-servidor no cenário de um supermercado.
